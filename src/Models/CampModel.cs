@@ -15,7 +15,7 @@ namespace CoreCodeCamp.Models
 
         public DateTime EventDate { get; set; } = DateTime.MinValue;
 
-        [Range(1,100)]
+        [Range(1, 100)]
         public int Length { get; set; } = 1;
 
         public string Venue { get; set; }

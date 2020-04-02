@@ -93,7 +93,7 @@ namespace CoreCodeCamp.Controllers
                 // Create a new camp
                 var camp = _Mapper.Map<Camp>(model);
                 _CampRepository.Add(camp);
-                
+
                 if (await _CampRepository.SaveChangesAsync())
                 {
                     return Created(location, _Mapper.Map<CampModel>(camp));
